@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phuong - Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon.png">
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/favicon.png">
+</head>
+
+<body>
+    <!-- Navigation menu -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>Phuong</span>
+            </div>
+
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
+                        href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
+                        href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
+                        href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><a
+                        href="#services">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700"><a
+                        href="#project">Project</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <div class="link"><a href="#home">Home</a></div>
+                <div class="link"><a href="#about">About</a></div>
+                <div class="link"><a href="#skills">Skills</a></div>
+                <div class="link"><a href="#services">Services</a></div>
+                <div class="link"><a href="#project">Project</a></div>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Section-1 -->
+    <section id="home">
+        <div class="main-container">
+            <!-- Image -->
+            <div class="image" data-aos="zoom-out" data-aos-duration="1500">
+                <img src="image/sloth-animal-icon-isolated-illustration-vector.jpg" alt="avatar" title="">
+            </div>
+            <!-- Content -->
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500">Hi, I'm
+                    <span>Phuong</span>
+                </h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500">
+                    I'm a
+                    <span class="typewriter-text"></span>
+                    <label for=""></label>
+                </div>
+                <p data-aos="flip-down" data-aos-duration="1100">A slow but resilient person, curious and full of
+                    passion.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/phuongtdd" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="1300" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/dp3711" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="1400" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dp3711/" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="1500" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button onclick="contactMe()">Contact Me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section-2-About-me -->
+
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>About me</span></div>
+            <div class="about-details">
+                <div class="left" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="image/sloth-animal-icon-isolated-illustration-vector.jpg" alt="">
+                </div>
+                <div class="right" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="topic">Coding is my passion</div>
+                    <p> I am a passionate developer with expertise in web development and a deep love for coding. Here's
+                        a bit more about me.</p>
+                    <div class="button">
+                        <button onclick="downloadCv()">Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-experience">
+            <div class="content">
+                <!-- Timeline -->
+                <div class="timeline">
+                    <!-- Education  -->
+                    <div class="timeline-section" data-aos="fade-right" data-aos-duration="1500">
+                        <h3 class="section-title">Education</h3>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <span class="timeline-date">2022 - 2026</span>
+                                <h4 class="timeline-title">FPT University</h4>
+                                <p class="timeline-desc">Bachelor's Degree in Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience  -->
+                    <div class="timeline-section" data-aos="fade-left" data-aos-duration="1500">
+                        <h3 class="section-title">Experience</h3>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <span class="timeline-date">2024 - Present</span>
+                                <h4 class="timeline-title">Web Developer</h4>
+                                <p class="timeline-desc">Providing services for customer</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">Before 2024</span>
+                                <h4 class="timeline-title">Noob</h4>
+                                <p class="timeline-desc">Empty...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section-3-My-Skill -->
+
+    <section class="skills" id="skills">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>My Skills</span></div>
+            <div class="skills-details">
+                <div class="text" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="topic">
+                        Skills Show Our Knowledge
+                    </div>
+                    <p data-aos="fade-right">These are the skills I have learned so far, and I’m continually working to
+                        grow and expand them even further.</p>
+                    <div class="experience">
+                        <div class="num">1</div>
+                        <div class="exp">
+                            Years Of <br>
+                            Experience
+                        </div>
+                    </div>
+                </div>
+                <div class="boxes" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="box">
+                        <div class="topic">HTML</div>
+                        <div class="skill-logo">
+                            <img src="image/Skills/html.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="topic">CSS</div>
+                        <div class="skill-logo">
+                            <img src="image/Skills/css-3.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="topic">JavaScript</div>
+                        <div class="skill-logo">
+                            <img src="image/Skills/java-script.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="topic">Java</div>
+                        <div class="skill-logo">
+                            <img src="image/Skills/java.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section-4-My-Services -->
+    <section class="services" id="services">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>My Services</span></div>
+            <div class="boxes">
+                <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    <div class="icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="topic">Web Development</div>
+                    <p>Building responsive, user-friendly websites and web applications to bring ideas to life.</p>
+
+                </div>
+
+                <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                    <div class="icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="topic">Back-End Developer </div>
+                    <p>Developing and managing the server-side of applications, ensuring seamless functionality and
+                        integration.</p>
+
+                </div>
+
+                <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                    <div class="icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <div class="topic">Java Developer</div>
+                    <p>Building robust and scalable applications with Java, specializing in Spring Boot for efficient
+                        back-end development.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section-5-Projects -->
+    <section class="project" id="project">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>My Project</span></div>
+            <div class="text">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1500">Loading...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="text">
+            <span>
+                <a href="#">Phuong</a>
+                | &#169;2024 All Rights Reserved
+            </span>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 0,
+            once: false,
+        });
+    </script>
+</body>
+
+</html>
