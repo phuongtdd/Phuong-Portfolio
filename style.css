@@ -540,7 +540,7 @@ section .button button::after:hover {
     width: 45%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 5%;
 }
 
 .skills-details .box {
