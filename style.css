@@ -214,7 +214,10 @@ section .main-container {
 
 .main-container .image img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: center;  /* Tùy chọn thêm */
+
 }
 
 .main-container .image:hover {
@@ -791,10 +794,10 @@ footer .text span a:hover {
 }
 
 @media(max-width: 500px) {
-    .main-container.image {
-        width: 50%;
-        height: 60%;
-        margin-bottom: 0px;
+    .main-container .image {
+        width: 250px;  /* Giảm kích thước cho màn hình nhỏ hơn */
+        height: 250px;
+        margin-bottom: 20px;
     }
 
     .main-container .content {
