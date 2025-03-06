@@ -702,7 +702,6 @@ footer .text span a:hover {
     .about .left img {
         height: 350px;
         width: 350px;
-        object-fit: cover;
     }
 }
 
