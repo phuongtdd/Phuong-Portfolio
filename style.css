@@ -205,7 +205,7 @@ section .main-container {
 
 .main-container .image {
     width: 400px;
-    height: 60vh;
+    height: 58vh;
     border-radius: 100%;
     overflow: hidden;
     box-shadow: 0 0 50px;
@@ -214,6 +214,7 @@ section .main-container {
 
 .main-container .image img {
     width: 100%;
+    object-fit: cover;
 }
 
 .main-container .image:hover {
@@ -701,6 +702,7 @@ footer .text span a:hover {
     .about .left img {
         height: 350px;
         width: 350px;
+        object-fit: cover;
     }
 }
 
