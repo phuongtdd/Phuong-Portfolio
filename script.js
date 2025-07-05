@@ -10,7 +10,7 @@ function cancel() {
 
 function contactMe() {
     //CV Download
-    const email = "phuongtdd3711@gmail.com";
+    const email = "phuong.tdd04@gmail.com";
     const subject = encodeURIComponent("Contact");
     const body = encodeURIComponent("Hi, I would like to talk with you");
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
