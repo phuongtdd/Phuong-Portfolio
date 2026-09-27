@@ -20,7 +20,18 @@ content:
     type: file
     path: src/content/profile.json
     fields:
-      - { name: name, label: Name, type: string, required: true }
+      - name: name
+        label: Short name (hero, logo)
+        type: object
+        fields:
+          - { name: en, label: English, type: string }
+          - { name: vi, label: Tiếng Việt, type: string }
+      - name: fullName
+        label: Full name (footer)
+        type: object
+        fields:
+          - { name: en, label: English, type: string }
+          - { name: vi, label: Tiếng Việt, type: string }
       - name: badge
         label: Badge (small pill above the name)
         type: object
@@ -53,8 +64,14 @@ content:
           - { name: en, label: English, type: text }
           - { name: vi, label: Tiếng Việt, type: text }
       - { name: aboutImage, label: About — image, type: image, options: { media: images } }
-      - { name: cv, label: CV (PDF), type: file, options: { media: documents } }
+      - { name: cv, label: CV (PDF) — leave empty to hide the download buttons, type: file, options: { media: documents } }
       - { name: email, label: Email, type: string }
+      - name: location
+        label: Location
+        type: object
+        fields:
+          - { name: en, label: English, type: string }
+          - { name: vi, label: Tiếng Việt, type: string }
       - name: socials
         label: Social links
         type: object
@@ -209,8 +226,14 @@ content:
             fields:
               - { name: en, label: English, type: string }
               - { name: vi, label: Tiếng Việt, type: string }
+          - name: period
+            label: Period
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: vi, label: Tiếng Việt, type: string }
           - name: role
-            label: My role
+            label: My role / team
             type: object
             fields:
               - { name: en, label: English, type: string }
@@ -221,7 +244,14 @@ content:
             fields:
               - { name: en, label: English, type: text }
               - { name: vi, label: Tiếng Việt, type: text }
-          - { name: image, label: Screenshot, type: image, options: { media: images } }
+          - name: highlights
+            label: Key contributions
+            type: object
+            list: true
+            fields:
+              - { name: en, label: English, type: text }
+              - { name: vi, label: Tiếng Việt, type: text }
+          - { name: image, label: Screenshot (optional — a cover is generated if empty), type: image, options: { media: images } }
           - { name: tech, label: Technologies, type: string, list: true }
           - { name: link, label: Link (GitHub / demo), type: string }
 

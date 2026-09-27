@@ -1,12 +1,13 @@
 {
-  "name": "Phuong",
+  "name": { "en": "Phuong", "vi": "Phương" },
+  "fullName": { "en": "Tran Dinh Duy Phuong", "vi": "Trần Đình Duy Phương" },
   "badge": {
-    "en": "Software Engineering · FPT University",
-    "vi": "Kỹ thuật phần mềm · Đại học FPT"
+    "en": "Software Engineering · FPT University Da Nang",
+    "vi": "Kỹ thuật phần mềm · Đại học FPT Đà Nẵng"
   },
   "headline": {
-    "en": "Web Developer building with Java & Spring Boot on the back end and React on the front.",
-    "vi": "Lập trình viên Web, làm back-end với Java & Spring Boot và front-end với React."
+    "en": "Full-Stack Java Developer building enterprise-grade applications with Spring Boot and React.",
+    "vi": "Lập trình viên Full-Stack Java, xây dựng ứng dụng cấp doanh nghiệp với Spring Boot và React."
   },
   "tagline": {
     "en": "A slow but resilient person, curious and full of passion.",
@@ -18,12 +19,13 @@
     "vi": "Lập trình là đam mê của tôi."
   },
   "about": {
-    "en": "I am a passionate developer with expertise in web development and a deep love for coding. I study Software Engineering at FPT University and build full-stack web apps with Java, Spring Boot and React.",
-    "vi": "Tôi là một lập trình viên đam mê phát triển web và yêu thích viết code. Tôi đang học Kỹ thuật phần mềm tại Đại học FPT và xây dựng các ứng dụng web full-stack với Java, Spring Boot và React."
+    "en": "I'm a final-year Software Engineering student (GPA 4.0/4.0, TOEIC 845) with 6+ months of hands-on experience as a Full-Stack Developer. I work across the whole stack — from database schema design and Spring Boot REST APIs to React front ends — on a solid foundation of OOP, data structures & algorithms and core Java. I'm looking for a Full-Stack Java Developer role where I can keep raising my engineering standards and ship real-world products.",
+    "vi": "Tôi là sinh viên năm cuối ngành Kỹ thuật phần mềm (GPA 4.0/4.0, TOEIC 845) với hơn 6 tháng kinh nghiệm thực tế ở vị trí Full-Stack Developer. Tôi làm việc trên toàn bộ stack — từ thiết kế cơ sở dữ liệu, xây dựng REST API với Spring Boot đến giao diện React — dựa trên nền tảng vững về OOP, cấu trúc dữ liệu & giải thuật và Java core. Tôi đang tìm kiếm vị trí Full-Stack Java Developer để tiếp tục nâng cao chuẩn mực kỹ thuật và đóng góp vào các dự án thực tế."
   },
   "aboutImage": "images/about.jpg",
-  "cv": "cv/Phuong_CV.pdf",
+  "cv": "",
   "email": "phuong.tdd04@gmail.com",
+  "location": { "en": "Da Nang, Vietnam", "vi": "Đà Nẵng, Việt Nam" },
   "socials": {
     "github": "https://github.com/phuongtdd",
     "linkedin": "https://www.linkedin.com/in/dp3711/",

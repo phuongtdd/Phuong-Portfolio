@@ -1,14 +1,27 @@
 {
   "items": [
     {
-      "period": { "en": "2024 — Present", "vi": "2024 — Nay" },
-      "role": { "en": "Web Developer", "vi": "Lập trình viên Web" },
-      "company": { "en": "Customer projects", "vi": "Dự án cho khách hàng" },
-      "description": {
-        "en": "Providing web development services for customers.",
-        "vi": "Cung cấp dịch vụ phát triển web cho khách hàng."
+      "period": { "en": "Feb 2026 — Aug 2026", "vi": "02/2026 — 08/2026" },
+      "role": {
+        "en": "Full-Stack Developer (Contract, Remote)",
+        "vi": "Full-Stack Developer (Hợp đồng, Remote)"
       },
-      "showInHero": true
+      "company": { "en": "Humatex — Da Nang", "vi": "Humatex — Đà Nẵng" },
+      "description": {
+        "en": "Developed and maintained the B2B Distribution Portal for Fuwa Biotech — a multi-tenant ordering and distribution system replacing a manual Excel-based workflow for distributors and retailers nationwide. Worked directly with business stakeholders to turn real distribution workflows into technical requirements, delivered across phased releases.",
+        "vi": "Phát triển và bảo trì B2B Distribution Portal cho Fuwa Biotech — hệ thống đặt hàng và phân phối multi-tenant thay thế quy trình Excel thủ công cho các nhà phân phối và đại lý trên toàn quốc. Làm việc trực tiếp với các bên nghiệp vụ để chuyển quy trình phân phối thực tế thành yêu cầu kỹ thuật, bàn giao theo từng giai đoạn."
+      },
+      "showInHero": false
+    },
+    {
+      "period": { "en": "Aug 2025 — Dec 2025", "vi": "08/2025 — 12/2025" },
+      "role": { "en": "Software Engineer Intern", "vi": "Thực tập sinh Kỹ sư phần mềm" },
+      "company": { "en": "FPT IS — Da Nang", "vi": "FPT IS — Đà Nẵng" },
+      "description": {
+        "en": "Contributed to the Legal Diploma Project, an enterprise document management system, across the ReactJS front end and Spring Boot back end. Diagnosed and resolved production defects and delivered features through code review into the production release cycle.",
+        "vi": "Tham gia dự án Legal Diploma — hệ thống quản lý văn bản cho doanh nghiệp, làm cả front-end ReactJS và back-end Spring Boot. Phân tích và xử lý lỗi trên môi trường production, bàn giao tính năng qua quy trình code review vào chu kỳ phát hành."
+      },
+      "showInHero": false
     }
   ]
 }

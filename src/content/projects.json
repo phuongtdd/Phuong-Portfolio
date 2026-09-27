@@ -1,26 +1,108 @@
 {
   "items": [
     {
-      "title": { "en": "MTP-2K Music Streaming", "vi": "MTP-2K — Nghe nhạc trực tuyến" },
-      "role": { "en": "Web Developer", "vi": "Lập trình viên Web" },
+      "title": { "en": "B2B Distribution Portal — Fuwa Biotech", "vi": "B2B Distribution Portal — Fuwa Biotech" },
+      "period": { "en": "Feb 2026 — Aug 2026", "vi": "02/2026 — 08/2026" },
+      "role": { "en": "Full-Stack Developer · Team of 4", "vi": "Full-Stack Developer · Nhóm 4 người" },
       "description": {
-        "en": "A web-based music streaming platform that lets users listen to music online and manage their playlists.",
-        "vi": "Nền tảng nghe nhạc trực tuyến trên web, cho phép người dùng nghe nhạc và quản lý danh sách phát."
+        "en": "A B2B platform connecting Fuwa Biotech with its distributor and retailer network — ordering, multi-warehouse inventory, receivables tracking, promotions and management reporting.",
+        "vi": "Nền tảng B2B kết nối Fuwa Biotech với mạng lưới nhà phân phối và đại lý — đặt hàng, tồn kho đa kho, theo dõi công nợ, khuyến mãi và báo cáo quản trị."
       },
-      "image": "images/projects/mtp-2k.png",
-      "tech": ["Java", "JSP / Servlet", "JDBC", "MS SQL", "Bootstrap"],
-      "link": "https://github.com/phuongtdd/PRJ301_Group3_MTP-2K"
+      "highlights": [
+        {
+          "en": "RESTful APIs for the full order lifecycle — quotation → confirmation → multi-batch shipment → delivery — with role-based access control.",
+          "vi": "REST API cho toàn bộ vòng đời đơn hàng — báo giá → xác nhận → giao nhiều đợt → xác nhận giao hàng — có phân quyền theo vai trò."
+        },
+        {
+          "en": "Multi-tenant data model running isolated distribution networks on a single deployment.",
+          "vi": "Mô hình dữ liệu multi-tenant, cho nhiều mạng lưới phân phối chạy độc lập trên cùng một hệ thống."
+        },
+        {
+          "en": "Receivables module with credit limits and automated aging reports; async workflows on Kafka; Redis caching and rate limiting.",
+          "vi": "Module công nợ với hạn mức tín dụng và báo cáo tuổi nợ tự động; xử lý bất đồng bộ qua Kafka; Redis cho caching và rate limiting."
+        }
+      ],
+      "image": "",
+      "tech": ["Java", "Spring Boot", "Spring Data JPA", "PostgreSQL", "React", "Kafka", "Redis", "Docker"],
+      "link": ""
+    },
+    {
+      "title": { "en": "EVar — Online Learning Platform", "vi": "EVar — Nền tảng học trực tuyến" },
+      "period": { "en": "Oct 2025 — Dec 2025", "vi": "10/2025 — 12/2025" },
+      "role": { "en": "Full-Stack Developer & Team Leader · Team of 4", "vi": "Full-Stack Developer & Trưởng nhóm · Nhóm 4 người" },
+      "description": {
+        "en": "A collaborative platform where high school students study together, take online exams and prepare for the National High School Graduation Exam.",
+        "vi": "Nền tảng học tập cộng tác giúp học sinh THPT học nhóm, làm bài thi trực tuyến và ôn thi tốt nghiệp THPT Quốc gia."
+      },
+      "highlights": [
+        {
+          "en": "Led the team: broke down requirements, ran sprints, reviewed pull requests and owned end-to-end integration.",
+          "vi": "Dẫn dắt nhóm: chia nhỏ yêu cầu, quản lý sprint, review pull request và chịu trách nhiệm tích hợp toàn hệ thống."
+        },
+        {
+          "en": "Spring Boot APIs for users, exams and study rooms; ZegoCloud for real-time group video calls and chat.",
+          "vi": "API Spring Boot cho người dùng, bài thi và phòng học; tích hợp ZegoCloud cho gọi video nhóm và chat thời gian thực."
+        },
+        {
+          "en": "AI features: Cloud Vision OCR for PDF exams, face-api.js identity checks and a RAG chatbot over study materials.",
+          "vi": "Tính năng AI: OCR đề thi PDF bằng Cloud Vision, xác thực khuôn mặt bằng face-api.js và chatbot RAG tra cứu tài liệu."
+        }
+      ],
+      "image": "",
+      "tech": ["React", "Spring Boot", "PostgreSQL", "ZegoCloud", "Vertex AI", "Vercel", "Render"],
+      "link": ""
+    },
+    {
+      "title": { "en": "LungHeroes — Healthcare App", "vi": "LungHeroes — Ứng dụng chăm sóc sức khỏe" },
+      "period": { "en": "Jul 2025 — Aug 2025", "vi": "07/2025 — 08/2025" },
+      "role": { "en": "Back-End Developer · Team of 4", "vi": "Back-End Developer · Nhóm 4 người" },
+      "description": {
+        "en": "A healthcare mobile app that overlays Grad-CAM heatmaps on X-ray images for diagnostic support, with a medical RAG chatbot and prescription scanning for medication reminders.",
+        "vi": "Ứng dụng di động y tế dùng Grad-CAM tạo heatmap trên ảnh X-quang để hỗ trợ chẩn đoán, kèm chatbot RAG tư vấn y khoa và quét đơn thuốc để nhắc lịch uống thuốc."
+      },
+      "highlights": [
+        {
+          "en": "Backend services for the Flutter app used by doctors and patients.",
+          "vi": "Xây dựng dịch vụ back-end cho ứng dụng Flutter dành cho bác sĩ và bệnh nhân."
+        },
+        {
+          "en": "Cloud Vision OCR + LLM to digitise paper prescriptions into automated reminders.",
+          "vi": "Kết hợp Cloud Vision OCR và LLM để số hóa đơn thuốc giấy thành lịch nhắc tự động."
+        },
+        {
+          "en": "Top 20 finalist at DevFest MienTrung 2025 Hackathon.",
+          "vi": "Lọt Top 20 chung kết DevFest Miền Trung 2025 Hackathon."
+        }
+      ],
+      "image": "",
+      "tech": ["Spring Boot", "PostgreSQL", "Flutter", "Azure", "Google Cloud", "Render"],
+      "link": ""
     },
     {
       "title": { "en": "Eyespire — Eye Clinic Management", "vi": "Eyespire — Quản lý phòng khám mắt" },
+      "period": { "en": "", "vi": "" },
       "role": { "en": "Web Developer", "vi": "Lập trình viên Web" },
       "description": {
         "en": "A web app for eye clinics that combines appointment booking with sales of specialised medical products.",
         "vi": "Ứng dụng web cho phòng khám mắt, kết hợp đặt lịch khám và bán sản phẩm y tế chuyên dụng."
       },
+      "highlights": [],
       "image": "images/projects/eyespire.png",
       "tech": ["React", "Spring Boot", "MS SQL", "TensorFlow"],
       "link": "https://github.com/Eyespire-Website"
+    },
+    {
+      "title": { "en": "MTP-2K Music Streaming", "vi": "MTP-2K — Nghe nhạc trực tuyến" },
+      "period": { "en": "", "vi": "" },
+      "role": { "en": "Web Developer", "vi": "Lập trình viên Web" },
+      "description": {
+        "en": "A web-based music streaming platform that lets users listen to music online and manage their playlists.",
+        "vi": "Nền tảng nghe nhạc trực tuyến trên web, cho phép người dùng nghe nhạc và quản lý danh sách phát."
+      },
+      "highlights": [],
+      "image": "images/projects/mtp-2k.png",
+      "tech": ["Java", "JSP / Servlet", "JDBC", "MS SQL", "Bootstrap"],
+      "link": "https://github.com/phuongtdd/PRJ301_Group3_MTP-2K"
     }
   ]
 }

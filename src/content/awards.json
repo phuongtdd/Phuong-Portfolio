@@ -1,14 +1,22 @@
 {
   "items": [
     {
-      "period": { "en": "Spring 2025", "vi": "Kỳ Xuân 2025" },
+      "period": { "en": "Nov 2025", "vi": "11/2025" },
+      "title": { "en": "DevFest Hackathon Top 20", "vi": "Top 20 DevFest Hackathon" },
+      "detail": {
+        "en": "GDG MienTrung 2025 · LungHeroes",
+        "vi": "GDG Miền Trung 2025 · LungHeroes"
+      }
+    },
+    {
+      "period": { "en": "Jun 2025", "vi": "06/2025" },
       "title": { "en": "Golden Toad Award", "vi": "Giải Cóc Vàng" },
       "detail": { "en": "Highest GPA in IT", "vi": "GPA cao nhất khối CNTT" }
     },
     {
-      "period": { "en": "Fall 2024", "vi": "Kỳ Thu 2024" },
-      "title": { "en": "Excellent Student", "vi": "Sinh viên Xuất sắc" },
-      "detail": { "en": "FPT University", "vi": "Đại học FPT" }
+      "period": { "en": "2024 — 2026", "vi": "2024 — 2026" },
+      "title": { "en": "Excellent Student ×5", "vi": "Sinh viên Xuất sắc ×5" },
+      "detail": { "en": "Five semesters", "vi": "Năm học kỳ" }
     }
   ]
 }
