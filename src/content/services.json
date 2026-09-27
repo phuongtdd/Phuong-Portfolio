@@ -2,26 +2,26 @@
   "items": [
     {
       "icon": "monitor",
-      "title": { "en": "Web Development", "vi": "Phát triển Web" },
+      "title": { "en": "Full-Stack Web Development", "vi": "Phát triển Web Full-Stack" },
       "description": {
-        "en": "Building responsive, user-friendly websites and web applications to bring ideas to life.",
-        "vi": "Xây dựng website và ứng dụng web responsive, thân thiện với người dùng để hiện thực hóa ý tưởng."
+        "en": "Building responsive web applications end to end — from the database schema to the React front end.",
+        "vi": "Xây dựng ứng dụng web responsive trọn gói — từ thiết kế cơ sở dữ liệu đến giao diện React."
+      }
+    },
+    {
+      "icon": "server",
+      "title": { "en": "Back-End & REST APIs", "vi": "Back-End & REST API" },
+      "description": {
+        "en": "Designing secure, well-structured RESTful APIs with Spring Boot, Spring Security and JPA / Hibernate.",
+        "vi": "Thiết kế REST API bảo mật, rõ ràng với Spring Boot, Spring Security và JPA / Hibernate."
       }
     },
     {
       "icon": "database",
-      "title": { "en": "Back-End Development", "vi": "Phát triển Back-End" },
+      "title": { "en": "Database Design", "vi": "Thiết kế cơ sở dữ liệu" },
       "description": {
-        "en": "Developing and managing the server side of applications, ensuring seamless functionality and integration.",
-        "vi": "Phát triển và quản lý phía máy chủ của ứng dụng, đảm bảo vận hành và tích hợp trơn tru."
-      }
-    },
-    {
-      "icon": "code",
-      "title": { "en": "Java Development", "vi": "Phát triển Java" },
-      "description": {
-        "en": "Building robust, scalable applications with Java, specialising in Spring Boot for efficient back ends.",
-        "vi": "Xây dựng ứng dụng mạnh mẽ, dễ mở rộng với Java, chuyên về Spring Boot cho back-end hiệu quả."
+        "en": "Modelling and optimising relational schemas on PostgreSQL, SQL Server and MySQL.",
+        "vi": "Mô hình hóa và tối ưu lược đồ quan hệ trên PostgreSQL, SQL Server và MySQL."
       }
     }
   ]

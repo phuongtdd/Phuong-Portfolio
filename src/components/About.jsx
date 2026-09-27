@@ -53,7 +53,7 @@ export default function About() {
           <img
             className="about__image"
             src={asset(profile.aboutImage)}
-            alt={t.aboutImageAlt(profile.name)}
+            alt={t.aboutImageAlt(l(profile.name))}
             loading="lazy"
             width="440"
             height="480"
@@ -63,12 +63,14 @@ export default function About() {
             <span className="eyebrow">01 — {t.aboutLabel}</span>
             <h2 className="section-title">{l(profile.aboutTitle)}</h2>
             <p className="lead">{l(profile.about)}</p>
-            <div>
-              <a className="btn btn--primary" href={asset(profile.cv)} download>
-                <Icon name="download" size={18} />
-                {t.downloadCv}
-              </a>
-            </div>
+            {profile.cv && (
+              <div>
+                <a className="btn btn--primary" href={asset(profile.cv)} download>
+                  <Icon name="download" size={18} />
+                  {t.downloadCv}
+                </a>
+              </div>
+            )}
           </div>
         </div>
 

@@ -5,7 +5,7 @@ import { asset } from '../utils/asset.js'
 import { usePreferences } from '../i18n/Preferences.jsx'
 
 export default function Nav() {
-  const { t, lang, theme, toggleLang, toggleTheme } = usePreferences()
+  const { t, l, lang, theme, toggleLang, toggleTheme } = usePreferences()
   const [open, setOpen] = useState(false)
 
   const links = [
@@ -27,7 +27,7 @@ export default function Nav() {
     <header className="nav">
       <div className="nav__inner container">
         <a href="#home" className="logo" onClick={() => setOpen(false)}>
-          {profile.name.toLowerCase()}
+          {l(profile.name).toLowerCase()}
           <span className="accent-dot">.</span>
         </a>
 
@@ -37,10 +37,12 @@ export default function Nav() {
               {l.label}
             </a>
           ))}
-          <a className="btn btn--outline btn--sm nav__cv" href={asset(profile.cv)} download>
-            <Icon name="download" size={18} />
-            {t.resume}
-          </a>
+          {profile.cv && (
+            <a className="btn btn--outline btn--sm nav__cv" href={asset(profile.cv)} download>
+              <Icon name="download" size={18} />
+              {t.resume}
+            </a>
+          )}
         </nav>
 
         <div className="nav__controls">

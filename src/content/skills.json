@@ -5,22 +5,34 @@
   },
   "groups": [
     {
-      "name": { "en": "Frontend", "vi": "Frontend" },
-      "icon": "monitor",
-      "highlight": false,
-      "skills": ["HTML", "CSS", "JavaScript", "React"]
-    },
-    {
-      "name": { "en": "Backend", "vi": "Backend" },
+      "name": { "en": "Java & Back-End", "vi": "Java & Back-End" },
       "icon": "server",
       "highlight": true,
-      "skills": ["Java", "Spring Boot", "MS SQL Server"]
+      "skills": ["Spring Boot", "Spring MVC", "Spring Data JPA", "Spring Security", "Hibernate / JPA", "RESTful API"]
     },
     {
-      "name": { "en": "Tools", "vi": "Công cụ" },
+      "name": { "en": "Languages", "vi": "Ngôn ngữ" },
+      "icon": "code",
+      "highlight": false,
+      "skills": ["Java (SE 8+)", "JavaScript", "TypeScript", "SQL", "C", "HTML5", "CSS3"]
+    },
+    {
+      "name": { "en": "Front-End", "vi": "Front-End" },
+      "icon": "monitor",
+      "highlight": false,
+      "skills": ["React", "Responsive Web Design"]
+    },
+    {
+      "name": { "en": "Databases", "vi": "Cơ sở dữ liệu" },
+      "icon": "database",
+      "highlight": false,
+      "skills": ["PostgreSQL", "SQL Server", "MySQL", "MongoDB"]
+    },
+    {
+      "name": { "en": "Tools & Practices", "vi": "Công cụ & Quy trình" },
       "icon": "git",
       "highlight": false,
-      "skills": ["Git", "GitHub"]
+      "skills": ["Git / GitHub", "GitLab", "Docker", "Maven", "Gradle", "JUnit", "Postman", "Scrum / Agile", "ERD & DB Design"]
     }
   ]
 }

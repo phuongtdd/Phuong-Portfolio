@@ -1,18 +1,40 @@
 {
   "items": [
     {
-      "period": { "en": "2022 — 2026", "vi": "2022 — 2026" },
-      "school": { "en": "FPT University", "vi": "Đại học FPT" },
+      "period": { "en": "Nov 2022 — Dec 2026", "vi": "11/2022 — 12/2026" },
+      "school": { "en": "FPT University Da Nang", "vi": "Đại học FPT Đà Nẵng" },
       "degree": {
-        "en": "Bachelor's Degree in Software Engineering",
+        "en": "Bachelor of Software Engineering",
         "vi": "Cử nhân Kỹ thuật phần mềm"
       },
       "highlights": [
-        { "en": "GPA 9.025 / 10", "vi": "GPA 9.025 / 10" },
-        { "en": "Excellent Student — Fall 2024", "vi": "Sinh viên Xuất sắc — Kỳ Thu 2024" },
+        { "en": "GPA 9.1 / 10 (4.0 / 4.0)", "vi": "GPA 9.1 / 10 (4.0 / 4.0)" },
         {
           "en": "Golden Toad Award — Spring 2025 (Highest GPA in IT)",
           "vi": "Giải Cóc Vàng — Kỳ Xuân 2025 (GPA cao nhất khối CNTT)"
+        },
+        {
+          "en": "Excellent Student — 5 semesters (Fall 2024, Spring 2025, Summer 2025, Spring 2026, Summer 2026)",
+          "vi": "Sinh viên Xuất sắc — 5 học kỳ (Thu 2024, Xuân 2025, Hè 2025, Xuân 2026, Hè 2026)"
+        },
+        {
+          "en": "English — TOEIC 845 (2025), professional working proficiency",
+          "vi": "Tiếng Anh — TOEIC 845 (2025), sử dụng tốt trong công việc"
+        }
+      ]
+    },
+    {
+      "period": { "en": "2024 — 2025", "vi": "2024 — 2025" },
+      "school": { "en": "Coursera", "vi": "Coursera" },
+      "degree": { "en": "Certifications", "vi": "Chứng chỉ" },
+      "highlights": [
+        {
+          "en": "Software Development Lifecycle — Jan 2025",
+          "vi": "Software Development Lifecycle — 01/2025"
+        },
+        {
+          "en": "Web Design for Everybody: Basics of Web Development & Coding — Sep 2024",
+          "vi": "Web Design for Everybody: Basics of Web Development & Coding — 09/2024"
         }
       ]
     }

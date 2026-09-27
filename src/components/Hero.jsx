@@ -4,10 +4,12 @@ import profile from '../content/profile.json'
 import awards from '../content/awards.json'
 import experience from '../content/experience.json'
 import { asset } from '../utils/asset.js'
+import { composeMailUrl } from '../utils/mail.js'
 import { usePreferences } from '../i18n/Preferences.jsx'
 
 export default function Hero() {
   const { t, l } = usePreferences()
+  const name = l(profile.name)
 
   const highlights = [
     ...awards.items.map((a) => ({ period: a.period, title: a.title, detail: a.detail })),
@@ -27,19 +29,21 @@ export default function Hero() {
             </span>
           )}
           <h1 className="hero__title">
-            <span className="hero__greeting">{t.greeting}</span> {profile.name}
+            <span className="hero__greeting">{t.greeting}</span> {name}
             <span className="accent-dot">.</span>
           </h1>
           <p className="hero__headline">{l(profile.headline)}</p>
           <p className="hero__tagline">{l(profile.tagline)}</p>
 
           <div className="hero__actions">
-            <a className="btn btn--primary" href="#contact">
+            <a className="btn btn--primary" href={composeMailUrl(profile.email)} target="_blank" rel="noopener noreferrer">
               {t.contactMe} <Icon name="arrow" size={18} />
             </a>
-            <a className="btn btn--outline" href={asset(profile.cv)} download>
-              {t.downloadCv}
-            </a>
+            {profile.cv && (
+              <a className="btn btn--outline" href={asset(profile.cv)} download>
+                {t.downloadCv}
+              </a>
+            )}
             <span className="hero__divider" aria-hidden="true" />
             <SocialLinks />
           </div>
@@ -47,7 +51,7 @@ export default function Hero() {
 
         <div className="hero__photo" data-reveal>
           <span className="hero__photo-block" aria-hidden="true" />
-          <img src={asset(profile.portrait)} alt={t.portraitAlt(profile.name)} width="424" height="524" />
+          <img src={asset(profile.portrait)} alt={t.portraitAlt(name)} width="424" height="524" />
         </div>
       </div>
 
