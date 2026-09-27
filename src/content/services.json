@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "icon": "monitor",
+      "title": "Web Development",
+      "description": "Building responsive, user-friendly websites and web applications to bring ideas to life."
+    },
+    {
+      "icon": "database",
+      "title": "Back-End Development",
+      "description": "Developing and managing the server side of applications, ensuring seamless functionality and integration."
+    },
+    {
+      "icon": "code",
+      "title": "Java Development",
+      "description": "Building robust, scalable applications with Java, specialising in Spring Boot for efficient back ends."
+    }
+  ]
+}
