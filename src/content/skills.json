@@ -1,0 +1,23 @@
+{
+  "intro": "These are the skills I have learned so far, and I'm continually working to grow and expand them even further.",
+  "groups": [
+    {
+      "name": "Frontend",
+      "icon": "monitor",
+      "highlight": false,
+      "skills": ["HTML", "CSS", "JavaScript", "React"]
+    },
+    {
+      "name": "Backend",
+      "icon": "server",
+      "highlight": true,
+      "skills": ["Java", "Spring Boot", "MS SQL Server"]
+    },
+    {
+      "name": "Tools",
+      "icon": "git",
+      "highlight": false,
+      "skills": ["Git", "GitHub"]
+    }
+  ]
+}

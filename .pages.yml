@@ -1,0 +1,136 @@
+# Pages CMS config — edit the site content at https://app.pagescms.org
+# Every save commits to the repo; GitHub Actions then rebuilds and redeploys the site.
+
+media:
+  - name: images
+    label: Images
+    input: public/images
+    output: /images
+    extensions: [jpg, jpeg, png, webp, gif, svg]
+  - name: documents
+    label: Documents (CV)
+    input: public/cv
+    output: /cv
+    extensions: [pdf]
+
+content:
+  - name: profile
+    label: Profile
+    type: file
+    path: src/content/profile.json
+    fields:
+      - { name: name, label: Name, type: string, required: true }
+      - { name: badge, label: Badge (small pill above the name), type: string }
+      - { name: headline, label: Headline, type: text }
+      - { name: tagline, label: Tagline, type: text }
+      - { name: portrait, label: Hero portrait, type: image, options: { media: images } }
+      - { name: aboutTitle, label: About — title, type: string }
+      - { name: about, label: About — text, type: text }
+      - { name: aboutImage, label: About — image, type: image, options: { media: images } }
+      - { name: cv, label: CV (PDF), type: file, options: { media: documents } }
+      - { name: email, label: Email, type: string }
+      - name: socials
+        label: Social links
+        type: object
+        fields:
+          - { name: github, label: GitHub URL, type: string }
+          - { name: linkedin, label: LinkedIn URL, type: string }
+          - { name: facebook, label: Facebook URL, type: string }
+
+  - name: awards
+    label: Awards
+    type: file
+    path: src/content/awards.json
+    fields:
+      - name: items
+        label: Awards (shown in the hero strip)
+        type: object
+        list: true
+        fields:
+          - { name: period, label: Period (e.g. Spring 2025), type: string }
+          - { name: title, label: Title, type: string, required: true }
+          - { name: detail, label: Detail, type: string }
+
+  - name: education
+    label: Education
+    type: file
+    path: src/content/education.json
+    fields:
+      - name: items
+        label: Education
+        type: object
+        list: true
+        fields:
+          - { name: period, label: Period, type: string }
+          - { name: school, label: School, type: string, required: true }
+          - { name: degree, label: Degree, type: string }
+          - { name: highlights, label: Highlights (GPA, honours…), type: string, list: true }
+
+  - name: experience
+    label: Experience
+    type: file
+    path: src/content/experience.json
+    fields:
+      - name: items
+        label: Experience
+        type: object
+        list: true
+        fields:
+          - { name: period, label: Period, type: string }
+          - { name: role, label: Role, type: string, required: true }
+          - { name: company, label: Company / client, type: string }
+          - { name: description, label: Description, type: text }
+          - { name: showInHero, label: Show in hero strip, type: boolean, default: false }
+
+  - name: skills
+    label: Skills
+    type: file
+    path: src/content/skills.json
+    fields:
+      - { name: intro, label: Intro text, type: text }
+      - name: groups
+        label: Skill groups
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Group name, type: string, required: true }
+          - name: icon
+            label: Icon
+            type: select
+            options: { values: [monitor, server, database, code, git] }
+          - { name: highlight, label: Dark highlighted card, type: boolean, default: false }
+          - { name: skills, label: Skills, type: string, list: true }
+
+  - name: projects
+    label: Projects
+    type: file
+    path: src/content/projects.json
+    fields:
+      - name: items
+        label: Projects
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string, required: true }
+          - { name: role, label: My role, type: string }
+          - { name: description, label: Description, type: text }
+          - { name: image, label: Screenshot, type: image, options: { media: images } }
+          - { name: tech, label: Technologies, type: string, list: true }
+          - { name: link, label: Link (GitHub / demo), type: string }
+
+  - name: services
+    label: Services
+    type: file
+    path: src/content/services.json
+    fields:
+      - name: items
+        label: Services
+        type: object
+        list: true
+        fields:
+          - name: icon
+            label: Icon
+            type: select
+            options: { values: [monitor, server, database, code, git] }
+          - { name: title, label: Title, type: string, required: true }
+          - { name: description, label: Description, type: text }

@@ -1,0 +1,17 @@
+{
+  "name": "Phuong",
+  "badge": "Software Engineering · FPT University",
+  "headline": "Web Developer building with Java & Spring Boot on the back end and React on the front.",
+  "tagline": "A slow but resilient person, curious and full of passion.",
+  "portrait": "images/portrait.jpg",
+  "aboutTitle": "Coding is my passion.",
+  "about": "I am a passionate developer with expertise in web development and a deep love for coding. I study Software Engineering at FPT University and build full-stack web apps with Java, Spring Boot and React.",
+  "aboutImage": "images/about.jpg",
+  "cv": "cv/Phuong_CV.pdf",
+  "email": "phuong.tdd04@gmail.com",
+  "socials": {
+    "github": "https://github.com/phuongtdd",
+    "linkedin": "https://www.linkedin.com/in/dp3711/",
+    "facebook": "https://www.facebook.com/dp3711"
+  }
+}

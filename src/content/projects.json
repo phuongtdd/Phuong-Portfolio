@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "title": "MTP-2K Music Streaming",
+      "role": "Web Developer",
+      "description": "A web-based music streaming platform that lets users listen to music online and manage their playlists.",
+      "image": "images/projects/mtp-2k.png",
+      "tech": ["Java", "JSP / Servlet", "JDBC", "MS SQL", "Bootstrap"],
+      "link": "https://github.com/phuongtdd/PRJ301_Group3_MTP-2K"
+    },
+    {
+      "title": "Eyespire — Eye Clinic Management",
+      "role": "Web Developer",
+      "description": "A web app for eye clinics that combines appointment booking with sales of specialised medical products.",
+      "image": "images/projects/eyespire.png",
+      "tech": ["React", "Spring Boot", "MS SQL", "TensorFlow"],
+      "link": "https://github.com/Eyespire-Website"
+    }
+  ]
+}
