@@ -3,8 +3,6 @@
   --bg: #f3f8f6;
   --surface: #ffffff;
   --ink: #0f2a24;
-  --ink-2: #1d4038;
-  --ink-line: #2b4e46;
   --muted: #4a625c;
   --on-ink-muted: #9fbab2;
   --line: #d3e4df;
@@ -14,9 +12,17 @@
   /* White text on --accent fails contrast, so buttons and text use the deep shade. */
   --accent-deep: #1b6f5e;
   --accent-soft: #dcefe9;
+  --on-accent: #ffffff;
+
+  /* Always-dark band (contact, footer, featured skill card) in both themes. */
+  --deep: #0f2a24;
+  --deep-2: #1d4038;
+  --deep-line: #2b4e46;
+  --on-deep: #f3f8f6;
+  --shadow: rgb(15 42 36 / 0.08);
 
   --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
-  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-body: 'Be Vietnam Pro', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
   --radius-lg: 32px;
@@ -26,6 +32,26 @@
   --gutter: clamp(20px, 5vw, 40px);
   --section-y: clamp(64px, 9vw, 112px);
   --nav-h: 72px;
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --bg: #0b1714;
+  --surface: #11211d;
+  --ink: #e4f1ec;
+  --muted: #9fbab2;
+  --line: #1f3832;
+  --line-strong: #2f4f47;
+
+  --accent-deep: #5fd3bb;
+  --accent-soft: #173a32;
+  --on-accent: #0b1714;
+
+  --deep: #0f2e27;
+  --deep-2: #1a4038;
+  --deep-line: #2b5249;
+  --shadow: rgb(0 0 0 / 0.35);
+  color-scheme: dark;
 }
 
 /* ---------- Base ---------- */
@@ -48,6 +74,7 @@ body {
   font-size: 17px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 img {
@@ -82,7 +109,7 @@ a {
 
 ::selection {
   background: var(--accent);
-  color: var(--ink);
+  color: #0f2a24;
 }
 
 .container {
@@ -97,7 +124,7 @@ a {
   z-index: 100;
   padding: 10px 16px;
   background: var(--ink);
-  color: #fff;
+  color: var(--bg);
   border-radius: 8px;
 }
 
@@ -231,12 +258,14 @@ a {
 
 .btn--primary {
   background: var(--accent-deep);
-  color: #fff;
+  color: var(--on-accent);
 }
 
-.btn--primary:hover {
+.btn--primary:hover,
+.btn--outline:hover,
+.btn--dark {
   background: var(--ink);
-  color: #fff;
+  color: var(--bg);
 }
 
 .btn--outline {
@@ -244,30 +273,23 @@ a {
   color: var(--ink);
 }
 
-.btn--outline:hover {
-  background: var(--ink);
-  color: #fff;
-}
-
 .btn--dark {
-  background: var(--ink);
-  color: #fff;
   align-self: flex-start;
 }
 
 .btn--dark:hover {
   background: var(--accent-deep);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 .btn--accent {
   background: var(--accent);
-  color: var(--ink);
+  color: #0f2a24;
 }
 
 .btn--accent:hover {
-  background: #f3f8f6;
-  color: var(--ink);
+  background: var(--on-deep);
+  color: #0f2a24;
 }
 
 /* Social icons */
@@ -291,12 +313,12 @@ a {
 .socials a:hover {
   background: var(--accent);
   border-color: var(--accent);
-  color: var(--ink);
+  color: #0f2a24;
 }
 
 .socials--dark a {
-  border-color: var(--ink-line);
-  color: var(--bg);
+  border-color: var(--deep-line);
+  color: var(--on-deep);
 }
 
 /* Scroll reveal */
@@ -358,7 +380,7 @@ a {
 .nav__links {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 28px;
 }
 
 .nav__links > a:not(.btn) {
@@ -383,18 +405,61 @@ a {
   width: 100%;
 }
 
-.nav__toggle {
-  display: none;
-  width: 44px;
-  height: 44px;
+.nav__controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggle {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  height: 44px;
   padding: 0;
-  border: 1.5px solid var(--ink);
-  border-radius: 50%;
+  border: 1.5px solid var(--line-strong);
+  border-radius: 999px;
   background: transparent;
   color: var(--ink);
+  font: inherit;
   cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.toggle:hover {
+  border-color: var(--ink);
+}
+
+.toggle--icon {
+  width: 44px;
+}
+
+.toggle--lang {
+  gap: 2px;
+  padding: 4px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.toggle--lang span {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 999px;
+  color: var(--muted);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.toggle--lang span.is-active {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.nav__toggle {
+  display: none;
+  border-color: var(--ink);
 }
 
 /* ---------- Hero ---------- */
@@ -424,6 +489,17 @@ a {
   line-height: 0.95;
   font-weight: 800;
   letter-spacing: -0.04em;
+}
+
+.hero__greeting {
+  display: block;
+}
+
+/* The Vietnamese greeting is twice as long; keep it from dwarfing the name. */
+:root[lang='vi'] .hero__greeting {
+  font-size: 0.55em;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.15em;
 }
 
 .hero__headline {
@@ -665,18 +741,18 @@ a {
 }
 
 .skill-card--dark {
-  background: var(--ink);
-  border-color: var(--ink);
+  background: var(--deep);
+  border-color: var(--deep-line);
   color: var(--accent);
 }
 
 .skill-card--dark .skill-card__title {
-  color: var(--bg);
+  color: var(--on-deep);
 }
 
 .skill-card--dark .chip {
-  background: var(--ink-2);
-  color: var(--bg);
+  background: var(--deep-2);
+  color: var(--on-deep);
 }
 
 /* ---------- Projects ---------- */
@@ -787,8 +863,8 @@ a {
 
 /* ---------- Contact & footer ---------- */
 .contact {
-  background: var(--ink);
-  color: var(--bg);
+  background: var(--deep);
+  color: var(--on-deep);
   padding-block: clamp(72px, 10vw, 120px);
 }
 
@@ -814,7 +890,7 @@ a {
   flex-wrap: wrap;
   gap: 24px 40px;
   padding-top: 40px;
-  border-top: 1px solid var(--ink-line);
+  border-top: 1px solid var(--deep-line);
 }
 
 .contact__email {
@@ -823,7 +899,7 @@ a {
   gap: 14px;
   font-size: clamp(18px, 2.2vw, 28px);
   font-weight: 500;
-  color: var(--bg);
+  color: var(--on-deep);
   text-decoration: none;
   word-break: break-all;
 }
@@ -840,9 +916,9 @@ a {
 }
 
 .footer {
-  background: var(--ink);
+  background: var(--deep);
   color: var(--on-ink-muted);
-  border-top: 1px solid var(--ink-line);
+  border-top: 1px solid var(--deep-line);
   font-size: 15px;
 }
 
@@ -894,7 +970,7 @@ a {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
   .nav__toggle {
     display: inline-flex;
   }
@@ -910,7 +986,7 @@ a {
     padding: 8px var(--gutter) 24px;
     background: var(--bg);
     border-bottom: 1px solid var(--line);
-    box-shadow: 0 16px 32px rgb(15 42 36 / 0.08);
+    box-shadow: 0 16px 32px var(--shadow);
     visibility: hidden;
     opacity: 0;
     transform: translateY(-8px);
@@ -936,6 +1012,9 @@ a {
   .nav__cv {
     margin-top: 20px;
   }
+}
+
+@media (max-width: 900px) {
 
   .hero__grid {
     grid-template-columns: minmax(0, 1fr);
@@ -990,7 +1069,6 @@ a {
     font-size: 24px;
   }
 
-  .hero__br,
   .hero__divider {
     display: none;
   }

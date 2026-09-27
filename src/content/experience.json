@@ -1,10 +1,13 @@
 {
   "items": [
     {
-      "period": "2024 — Present",
-      "role": "Web Developer",
-      "company": "Customer projects",
-      "description": "Providing web development services for customers.",
+      "period": { "en": "2024 — Present", "vi": "2024 — Nay" },
+      "role": { "en": "Web Developer", "vi": "Lập trình viên Web" },
+      "company": { "en": "Customer projects", "vi": "Dự án cho khách hàng" },
+      "description": {
+        "en": "Providing web development services for customers.",
+        "vi": "Cung cấp dịch vụ phát triển web cho khách hàng."
+      },
       "showInHero": true
     }
   ]

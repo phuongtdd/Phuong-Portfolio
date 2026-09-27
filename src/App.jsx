@@ -7,13 +7,15 @@ import Services from './components/Services.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import { useReveal } from './hooks/useReveal.js'
+import { usePreferences } from './i18n/Preferences.jsx'
 
 export default function App() {
+  const { t } = usePreferences()
   useReveal()
 
   return (
     <>
-      <a className="skip-link" href="#main">Skip to content</a>
+      <a className="skip-link" href="#main">{t.skip}</a>
       <Nav />
       <main id="main">
         <Hero />
