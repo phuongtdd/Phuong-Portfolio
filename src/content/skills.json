@@ -1,20 +1,23 @@
 {
-  "intro": "These are the skills I have learned so far, and I'm continually working to grow and expand them even further.",
+  "intro": {
+    "en": "These are the skills I have learned so far, and I'm continually working to grow and expand them even further.",
+    "vi": "Đây là những kỹ năng tôi đã học được, và tôi vẫn không ngừng trau dồi, mở rộng chúng."
+  },
   "groups": [
     {
-      "name": "Frontend",
+      "name": { "en": "Frontend", "vi": "Frontend" },
       "icon": "monitor",
       "highlight": false,
       "skills": ["HTML", "CSS", "JavaScript", "React"]
     },
     {
-      "name": "Backend",
+      "name": { "en": "Backend", "vi": "Backend" },
       "icon": "server",
       "highlight": true,
       "skills": ["Java", "Spring Boot", "MS SQL Server"]
     },
     {
-      "name": "Tools",
+      "name": { "en": "Tools", "vi": "Công cụ" },
       "icon": "git",
       "highlight": false,
       "skills": ["Git", "GitHub"]

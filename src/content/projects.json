@@ -1,17 +1,23 @@
 {
   "items": [
     {
-      "title": "MTP-2K Music Streaming",
-      "role": "Web Developer",
-      "description": "A web-based music streaming platform that lets users listen to music online and manage their playlists.",
+      "title": { "en": "MTP-2K Music Streaming", "vi": "MTP-2K — Nghe nhạc trực tuyến" },
+      "role": { "en": "Web Developer", "vi": "Lập trình viên Web" },
+      "description": {
+        "en": "A web-based music streaming platform that lets users listen to music online and manage their playlists.",
+        "vi": "Nền tảng nghe nhạc trực tuyến trên web, cho phép người dùng nghe nhạc và quản lý danh sách phát."
+      },
       "image": "images/projects/mtp-2k.png",
       "tech": ["Java", "JSP / Servlet", "JDBC", "MS SQL", "Bootstrap"],
       "link": "https://github.com/phuongtdd/PRJ301_Group3_MTP-2K"
     },
     {
-      "title": "Eyespire — Eye Clinic Management",
-      "role": "Web Developer",
-      "description": "A web app for eye clinics that combines appointment booking with sales of specialised medical products.",
+      "title": { "en": "Eyespire — Eye Clinic Management", "vi": "Eyespire — Quản lý phòng khám mắt" },
+      "role": { "en": "Web Developer", "vi": "Lập trình viên Web" },
+      "description": {
+        "en": "A web app for eye clinics that combines appointment booking with sales of specialised medical products.",
+        "vi": "Ứng dụng web cho phòng khám mắt, kết hợp đặt lịch khám và bán sản phẩm y tế chuyên dụng."
+      },
       "image": "images/projects/eyespire.png",
       "tech": ["React", "Spring Boot", "MS SQL", "TensorFlow"],
       "link": "https://github.com/Eyespire-Website"

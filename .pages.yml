@@ -1,5 +1,6 @@
 # Pages CMS config — edit the site content at https://app.pagescms.org
 # Every save commits to the repo; GitHub Actions then rebuilds and redeploys the site.
+# Translatable fields are objects with an English (en) and a Vietnamese (vi) value.
 
 media:
   - name: images
@@ -20,12 +21,37 @@ content:
     path: src/content/profile.json
     fields:
       - { name: name, label: Name, type: string, required: true }
-      - { name: badge, label: Badge (small pill above the name), type: string }
-      - { name: headline, label: Headline, type: text }
-      - { name: tagline, label: Tagline, type: text }
+      - name: badge
+        label: Badge (small pill above the name)
+        type: object
+        fields:
+          - { name: en, label: English, type: string }
+          - { name: vi, label: Tiếng Việt, type: string }
+      - name: headline
+        label: Headline
+        type: object
+        fields:
+          - { name: en, label: English, type: text }
+          - { name: vi, label: Tiếng Việt, type: text }
+      - name: tagline
+        label: Tagline
+        type: object
+        fields:
+          - { name: en, label: English, type: text }
+          - { name: vi, label: Tiếng Việt, type: text }
       - { name: portrait, label: Hero portrait, type: image, options: { media: images } }
-      - { name: aboutTitle, label: About — title, type: string }
-      - { name: about, label: About — text, type: text }
+      - name: aboutTitle
+        label: About — title
+        type: object
+        fields:
+          - { name: en, label: English, type: string }
+          - { name: vi, label: Tiếng Việt, type: string }
+      - name: about
+        label: About — text
+        type: object
+        fields:
+          - { name: en, label: English, type: text }
+          - { name: vi, label: Tiếng Việt, type: text }
       - { name: aboutImage, label: About — image, type: image, options: { media: images } }
       - { name: cv, label: CV (PDF), type: file, options: { media: documents } }
       - { name: email, label: Email, type: string }
@@ -47,9 +73,24 @@ content:
         type: object
         list: true
         fields:
-          - { name: period, label: Period (e.g. Spring 2025), type: string }
-          - { name: title, label: Title, type: string, required: true }
-          - { name: detail, label: Detail, type: string }
+          - name: period
+            label: Period (e.g. Spring 2025)
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: vi, label: Tiếng Việt, type: string }
+          - name: title
+            label: Title
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: vi, label: Tiếng Việt, type: string }
+          - name: detail
+            label: Detail
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: vi, label: Tiếng Việt, type: string }
 
   - name: education
     label: Education
@@ -61,10 +102,31 @@ content:
         type: object
         list: true
         fields:
-          - { name: period, label: Period, type: string }
-          - { name: school, label: School, type: string, required: true }
-          - { name: degree, label: Degree, type: string }
-          - { name: highlights, label: Highlights (GPA, honours…), type: string, list: true }
+          - name: period
+            label: Period
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: vi, label: Tiếng Việt, type: string }
+          - name: school
+            label: School
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: vi, label: Tiếng Việt, type: string }
+          - name: degree
+            label: Degree
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: vi, label: Tiếng Việt, type: string }
+          - name: highlights
+            label: Highlights (GPA, honours…)
+            type: object
+            list: true
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: vi, label: Tiếng Việt, type: string }
 
   - name: experience
     label: Experience
@@ -76,10 +138,30 @@ content:
         type: object
         list: true
         fields:
-          - { name: period, label: Period, type: string }
-          - { name: role, label: Role, type: string, required: true }
-          - { name: company, label: Company / client, type: string }
-          - { name: description, label: Description, type: text }
+          - name: period
+            label: Period
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: vi, label: Tiếng Việt, type: string }
+          - name: role
+            label: Role
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: vi, label: Tiếng Việt, type: string }
+          - name: company
+            label: Company / client
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: vi, label: Tiếng Việt, type: string }
+          - name: description
+            label: Description
+            type: object
+            fields:
+              - { name: en, label: English, type: text }
+              - { name: vi, label: Tiếng Việt, type: text }
           - { name: showInHero, label: Show in hero strip, type: boolean, default: false }
 
   - name: skills
@@ -87,13 +169,23 @@ content:
     type: file
     path: src/content/skills.json
     fields:
-      - { name: intro, label: Intro text, type: text }
+      - name: intro
+        label: Intro text
+        type: object
+        fields:
+          - { name: en, label: English, type: text }
+          - { name: vi, label: Tiếng Việt, type: text }
       - name: groups
         label: Skill groups
         type: object
         list: true
         fields:
-          - { name: name, label: Group name, type: string, required: true }
+          - name: name
+            label: Group name
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: vi, label: Tiếng Việt, type: string }
           - name: icon
             label: Icon
             type: select
@@ -111,9 +203,24 @@ content:
         type: object
         list: true
         fields:
-          - { name: title, label: Title, type: string, required: true }
-          - { name: role, label: My role, type: string }
-          - { name: description, label: Description, type: text }
+          - name: title
+            label: Title
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: vi, label: Tiếng Việt, type: string }
+          - name: role
+            label: My role
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: vi, label: Tiếng Việt, type: string }
+          - name: description
+            label: Description
+            type: object
+            fields:
+              - { name: en, label: English, type: text }
+              - { name: vi, label: Tiếng Việt, type: text }
           - { name: image, label: Screenshot, type: image, options: { media: images } }
           - { name: tech, label: Technologies, type: string, list: true }
           - { name: link, label: Link (GitHub / demo), type: string }
@@ -132,5 +239,15 @@ content:
             label: Icon
             type: select
             options: { values: [monitor, server, database, code, git] }
-          - { name: title, label: Title, type: string, required: true }
-          - { name: description, label: Description, type: text }
+          - name: title
+            label: Title
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: vi, label: Tiếng Việt, type: string }
+          - name: description
+            label: Description
+            type: object
+            fields:
+              - { name: en, label: English, type: text }
+              - { name: vi, label: Tiếng Việt, type: text }

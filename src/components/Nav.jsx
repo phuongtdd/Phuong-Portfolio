@@ -2,17 +2,19 @@ import { useEffect, useState } from 'react'
 import Icon from './Icon.jsx'
 import profile from '../content/profile.json'
 import { asset } from '../utils/asset.js'
-
-const links = [
-  { href: '#about', label: 'About' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#services', label: 'Services' },
-  { href: '#contact', label: 'Contact' },
-]
+import { usePreferences } from '../i18n/Preferences.jsx'
 
 export default function Nav() {
+  const { t, lang, theme, toggleLang, toggleTheme } = usePreferences()
   const [open, setOpen] = useState(false)
+
+  const links = [
+    { href: '#about', label: t.navAbout },
+    { href: '#skills', label: t.navSkills },
+    { href: '#projects', label: t.navProjects },
+    { href: '#services', label: t.navServices },
+    { href: '#contact', label: t.navContact },
+  ]
 
   useEffect(() => {
     if (!open) return
@@ -37,20 +39,34 @@ export default function Nav() {
           ))}
           <a className="btn btn--outline btn--sm nav__cv" href={asset(profile.cv)} download>
             <Icon name="download" size={18} />
-            Resume
+            {t.resume}
           </a>
         </nav>
 
-        <button
-          type="button"
-          className="nav__toggle"
-          aria-label={open ? 'Close menu' : 'Open menu'}
-          aria-expanded={open}
-          aria-controls="primary-nav"
-          onClick={() => setOpen((v) => !v)}
-        >
-          <Icon name={open ? 'close' : 'menu'} />
-        </button>
+        <div className="nav__controls">
+          <button type="button" className="toggle toggle--lang" onClick={toggleLang} aria-label={t.switchLang}>
+            <span className={lang === 'en' ? 'is-active' : ''}>EN</span>
+            <span className={lang === 'vi' ? 'is-active' : ''}>VI</span>
+          </button>
+          <button
+            type="button"
+            className="toggle toggle--icon"
+            onClick={toggleTheme}
+            aria-label={theme === 'dark' ? t.toLight : t.toDark}
+          >
+            <Icon name={theme === 'dark' ? 'sun' : 'moon'} size={18} />
+          </button>
+          <button
+            type="button"
+            className="toggle toggle--icon nav__toggle"
+            aria-label={open ? t.closeMenu : t.openMenu}
+            aria-expanded={open}
+            aria-controls="primary-nav"
+            onClick={() => setOpen((v) => !v)}
+          >
+            <Icon name={open ? 'close' : 'menu'} />
+          </button>
+        </div>
       </div>
     </header>
   )

@@ -2,18 +2,27 @@
   "items": [
     {
       "icon": "monitor",
-      "title": "Web Development",
-      "description": "Building responsive, user-friendly websites and web applications to bring ideas to life."
+      "title": { "en": "Web Development", "vi": "Phát triển Web" },
+      "description": {
+        "en": "Building responsive, user-friendly websites and web applications to bring ideas to life.",
+        "vi": "Xây dựng website và ứng dụng web responsive, thân thiện với người dùng để hiện thực hóa ý tưởng."
+      }
     },
     {
       "icon": "database",
-      "title": "Back-End Development",
-      "description": "Developing and managing the server side of applications, ensuring seamless functionality and integration."
+      "title": { "en": "Back-End Development", "vi": "Phát triển Back-End" },
+      "description": {
+        "en": "Developing and managing the server side of applications, ensuring seamless functionality and integration.",
+        "vi": "Phát triển và quản lý phía máy chủ của ứng dụng, đảm bảo vận hành và tích hợp trơn tru."
+      }
     },
     {
       "icon": "code",
-      "title": "Java Development",
-      "description": "Building robust, scalable applications with Java, specialising in Spring Boot for efficient back ends."
+      "title": { "en": "Java Development", "vi": "Phát triển Java" },
+      "description": {
+        "en": "Building robust, scalable applications with Java, specialising in Spring Boot for efficient back ends.",
+        "vi": "Xây dựng ứng dụng mạnh mẽ, dễ mở rộng với Java, chuyên về Spring Boot cho back-end hiệu quả."
+      }
     }
   ]
 }

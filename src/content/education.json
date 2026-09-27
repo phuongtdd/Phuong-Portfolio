@@ -1,13 +1,19 @@
 {
   "items": [
     {
-      "period": "2022 — 2026",
-      "school": "FPT University",
-      "degree": "Bachelor's Degree in Software Engineering",
+      "period": { "en": "2022 — 2026", "vi": "2022 — 2026" },
+      "school": { "en": "FPT University", "vi": "Đại học FPT" },
+      "degree": {
+        "en": "Bachelor's Degree in Software Engineering",
+        "vi": "Cử nhân Kỹ thuật phần mềm"
+      },
       "highlights": [
-        "GPA 9.025 / 10",
-        "Excellent Student — Fall 2024",
-        "Golden Toad Award — Spring 2025 (Highest GPA in IT)"
+        { "en": "GPA 9.025 / 10", "vi": "GPA 9.025 / 10" },
+        { "en": "Excellent Student — Fall 2024", "vi": "Sinh viên Xuất sắc — Kỳ Thu 2024" },
+        {
+          "en": "Golden Toad Award — Spring 2025 (Highest GPA in IT)",
+          "vi": "Giải Cóc Vàng — Kỳ Xuân 2025 (GPA cao nhất khối CNTT)"
+        }
       ]
     }
   ]

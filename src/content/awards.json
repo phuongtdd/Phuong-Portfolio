@@ -1,14 +1,14 @@
 {
   "items": [
     {
-      "period": "Spring 2025",
-      "title": "Golden Toad Award",
-      "detail": "Highest GPA in IT"
+      "period": { "en": "Spring 2025", "vi": "Kỳ Xuân 2025" },
+      "title": { "en": "Golden Toad Award", "vi": "Giải Cóc Vàng" },
+      "detail": { "en": "Highest GPA in IT", "vi": "GPA cao nhất khối CNTT" }
     },
     {
-      "period": "Fall 2024",
-      "title": "Excellent Student",
-      "detail": "FPT University"
+      "period": { "en": "Fall 2024", "vi": "Kỳ Thu 2024" },
+      "title": { "en": "Excellent Student", "vi": "Sinh viên Xuất sắc" },
+      "detail": { "en": "FPT University", "vi": "Đại học FPT" }
     }
   ]
 }
